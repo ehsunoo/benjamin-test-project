@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.des {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.details {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+
+  li {
+    font-size: 10px;
+    font-weight: 300;
+    color: black;
+  }
+
+  li:before {
+    content: "✓";
+  }
+}
+
+// Smart Phone
+@media only screen and (min-width: 1px) and (max-width: 767px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+}
