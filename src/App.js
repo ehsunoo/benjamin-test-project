@@ -1,13 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 
 // Pages
-import OneTime from "./pages/Periods";
+import Periods from "./pages/Periods";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/:period" element={<OneTime />} />
+        <Route path="/" element={<Periods />} />
+        <Route path="/:period" element={<Periods />} />
       </Routes>
     </div>
   );
